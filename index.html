@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prueba Descarga PDF</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXX');
+</script>
+
+</head>
+
+<body>
+
+<h1>Investigación Cultural</h1>
+
+<p>Descargar documento:</p>
+
+<a href="investigacion.pdf"
+onclick="gtag('event','download_pdf',{
+'archivo':'investigacion'
+});">
+
+Descargar PDF
+
+</a>
+
+</body>
+</html>
