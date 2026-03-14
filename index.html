@@ -25,7 +25,8 @@ background:#f4f4f4;
 header{
 background:#002855;
 color:white;
-padding:15px;
+padding:20px;
+border-radius:5px;
 }
 
 h1{
@@ -37,6 +38,14 @@ background:white;
 padding:20px;
 margin-top:20px;
 border-radius:6px;
+box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.area{
+color:#444;
+font-size:20px;
+margin-bottom:10px;
+font-weight:bold;
 }
 
 a{
@@ -51,10 +60,10 @@ a:hover{
 text-decoration:underline;
 }
 
-.area{
-color:#444;
-font-size:20px;
-margin-bottom:10px;
+footer{
+margin-top:30px;
+font-size:14px;
+color:#555;
 }
 
 </style>
@@ -65,7 +74,7 @@ margin-bottom:10px;
 
 <header>
 <h1>Centro de Estudios de las Culturas en Guatemala</h1>
-<p>Repositorio de Investigaciones (Prueba de Analítica Web)</p>
+<p>Repositorio de Investigaciones – Prueba de Analítica Web</p>
 </header>
 
 <section>
@@ -118,19 +127,23 @@ Descargar: Patrimonio Cultural
 
 <section>
 
-<div class="area">Área: Lenguas y Cultura</div>
+<div class="area">Área: Medicina Tradicional</div>
 
-<a href="lenguas_indigenas.pdf"
-onclick="gtag('event','download_pdf',{'archivo':'lenguas_indigenas'});">
-Descargar: Lenguas Indígenas
+<a href="plantas_medicinales.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'plantas_medicinales'});">
+Descargar: Plantas Medicinales en Guatemala
 </a>
 
-<a href="diversidad_linguistica.pdf"
-onclick="gtag('event','download_pdf',{'archivo':'diversidad_linguistica'});">
-Descargar: Diversidad Lingüística
+<a href="practicas_curativas.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'practicas_curativas'});">
+Descargar: Prácticas Curativas Tradicionales
 </a>
 
 </section>
+
+<footer>
+<p>Proyecto de demostración para medición de descargas de documentos mediante Google Analytics.</p>
+</footer>
 
 </body>
 </html>
