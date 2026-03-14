@@ -1,42 +1,136 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
-<title>Prueba Descarga PDF</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T34H8TP7WM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<title>Repositorio de Investigaciones - CECEG (Prueba)</title>
 
-  gtag('config', 'G-T34H8TP7WM');
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T34H8TP7WM"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-XXXXXXXX');
+gtag('config', 'G-T34H8TP7WM');
 </script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+background:#f4f4f4;
+}
+
+header{
+background:#002855;
+color:white;
+padding:15px;
+}
+
+h1{
+margin:0;
+}
+
+section{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:6px;
+}
+
+a{
+display:block;
+margin:8px 0;
+color:#0b5394;
+text-decoration:none;
+font-weight:bold;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+.area{
+color:#444;
+font-size:20px;
+margin-bottom:10px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<h1>Investigación Cultural</h1>
+<header>
+<h1>Centro de Estudios de las Culturas en Guatemala</h1>
+<p>Repositorio de Investigaciones (Prueba de Analítica Web)</p>
+</header>
 
-<p>Descargar documento:</p>
+<section>
 
-<a href="investigacion.pdf"
-onclick="gtag('event','download_pdf',{
-'archivo':'investigacion'
-});">
+<div class="area">Área: Cultura e Identidad</div>
 
-Descargar PDF
-
+<a href="cultura_maya.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'cultura_maya'});">
+Descargar: Cultura Maya
 </a>
 
-</body>
+<a href="identidad_cultural.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'identidad_cultural'});">
+Descargar: Identidad Cultural
+</a>
 
+</section>
+
+<section>
+
+<div class="area">Área: Tradición Oral</div>
+
+<a href="tradicion_oral_jutiapa.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'tradicion_oral_jutiapa'});">
+Descargar: Tradición Oral en Jutiapa
+</a>
+
+<a href="relatos_populares.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'relatos_populares'});">
+Descargar: Relatos Populares
+</a>
+
+</section>
+
+<section>
+
+<div class="area">Área: Historia</div>
+
+<a href="historia_regional.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'historia_regional'});">
+Descargar: Historia Regional
+</a>
+
+<a href="patrimonio_cultural.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'patrimonio_cultural'});">
+Descargar: Patrimonio Cultural
+</a>
+
+</section>
+
+<section>
+
+<div class="area">Área: Lenguas y Cultura</div>
+
+<a href="lenguas_indigenas.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'lenguas_indigenas'});">
+Descargar: Lenguas Indígenas
+</a>
+
+<a href="diversidad_linguistica.pdf"
+onclick="gtag('event','download_pdf',{'archivo':'diversidad_linguistica'});">
+Descargar: Diversidad Lingüística
+</a>
+
+</section>
+
+</body>
 </html>
